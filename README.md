@@ -8,6 +8,7 @@ This page contains notebooks, code samples, sample apps, and other resources tha
 
 #### Train and use your own models
 **AutoML**: Create and train models with minimal technical knowledge and effort. To learn more about AutoML, see [AutoML beginner's guide](https://cloud.google.com/vertex-ai/docs/beginner/beginners-guide).
+  
 **Custom training**: Create and train models at scale using any ML framework. To learn more about custom training on Vertex AI, see [Custom training overview](https://cloud.google.com/vertex-ai/docs/training/overview).
 
 **AutoML**:  
