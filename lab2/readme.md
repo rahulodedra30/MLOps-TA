@@ -11,9 +11,6 @@ In this lab, you will learn how to use Vertex AI to train and serve a TensorFlow
 - Submit a custom model training job to Vertex AI.
 - Deploy your trained model to an endpoint and use that endpoint to get predictions.
 
-## Introduction to Vertex AI
-Vertex AI integrates ML offerings across Google Cloud into a seamless development experience. It combines models trained with AutoML and custom models into a single API along with other new products. Vertex AI includes many products to support end-to-end ML workflows, with a focus on Training, Prediction, and Notebooks.
-
 ## Steps to Run the Lab
 
 ### Task 1: Set Up Your Environment
@@ -26,6 +23,9 @@ Vertex AI integrates ML offerings across Google Cloud into a seamless developmen
 4. Launch a Vertex AI Notebooks instance:
    - Navigate to Vertex AI > Workbench.
    - Create a new notebook instance with TensorFlow Enterprise 2.11.
+
+![](https://github.com/rahulodedra30/MLOps-TA/blob/main/lab2/Images/workbench.png)
+![](https://github.com/rahulodedra30/MLOps-TA/blob/main/lab2/Images/JupyterLab.png)
 
 ### Task 2: Containerize Training Code
 1. create a directory
@@ -55,11 +55,13 @@ Vertex AI integrates ML offerings across Google Cloud into a seamless developmen
 2. Kick off the training job:
    - Navigate to the Model Registry section in Vertex AI and create a new training job using the custom container.
 
+![](https://github.com/rahulodedra30/MLOps-TA/blob/main/lab2/Images/training.png)
+
 ### Task 4: Deploy a Model Endpoint
 1. Once training is complete, deploy the model to an endpoint:
    - Go to the Model Registry, select your model, and click Deploy & Test.
    - Create a new endpoint and configure the deployment settings.
-
+     
 2. Get predictions from the deployed model using the Vertex AI API in a Python notebook:
    ```python
    !pip3 install google-cloud-aiplatform --upgrade --user
@@ -69,6 +71,10 @@ Vertex AI integrates ML offerings across Google Cloud into a seamless developmen
    print('API response: ', response)
    print('Predicted MPG: ', response.predictions[0][0])
    ```
+![](https://github.com/rahulodedra30/MLOps-TA/blob/main/lab2/Images/model%20registry.png)
+![](https://github.com/rahulodedra30/MLOps-TA/blob/main/lab2/Images/deployment.png)
+![](https://github.com/rahulodedra30/MLOps-TA/blob/main/lab2/Images/deployed%20model%20details.png)
+![](https://github.com/rahulodedra30/MLOps-TA/blob/main/lab2/Images/endpoint%20prediction.png)
 
 ## Conclusion
 You have successfully trained and deployed a TensorFlow model using Vertex AI and a custom container. You can now make predictions using the deployed model endpoint.
