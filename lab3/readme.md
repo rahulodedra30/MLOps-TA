@@ -4,7 +4,7 @@
 ## Overview
 In this lab, you will learn how to use Vertex AI to train and serve a TensorFlow model using code in a custom container. While we are using TensorFlow in this example, It could easily replaced by any another framework. We will be focussing on Training, Prediction, and Notebooks in this lab.
 
-![](https://github.com/rahulodedra30/MLOps-TA/blob/main/lab2/Images/flow.png)
+![](https://github.com/rahulodedra30/MLOps-TA/blob/main/lab3/Images/flow.png)
 
 ## Learning Objectives
 - Build and containerize model training code in Vertex Notebooks.
@@ -24,8 +24,8 @@ In this lab, you will learn how to use Vertex AI to train and serve a TensorFlow
    - Navigate to Vertex AI > Workbench.
    - Create a new notebook instance with TensorFlow Enterprise 2.11.
 
-![](https://github.com/rahulodedra30/MLOps-TA/blob/main/lab2/Images/workbench.png)
-![](https://github.com/rahulodedra30/MLOps-TA/blob/main/lab2/Images/JupyterLab.png)
+![](https://github.com/rahulodedra30/MLOps-TA/blob/main/lab3/Images/workbench.png)
+![](https://github.com/rahulodedra30/MLOps-TA/blob/main/lab3/Images/JupyterLab.png)
 
 ### Task 2: Containerize Training Code
 1. create a directory
@@ -55,7 +55,7 @@ In this lab, you will learn how to use Vertex AI to train and serve a TensorFlow
 2. Kick off the training job:
    - Navigate to the Model Registry section in Vertex AI and create a new training job using the custom container.
 
-![](https://github.com/rahulodedra30/MLOps-TA/blob/main/lab2/Images/training.png)
+![](https://github.com/rahulodedra30/MLOps-TA/blob/main/lab3/Images/training.png)
 
 ### Task 4: Deploy a Model Endpoint
 1. Once training is complete, deploy the model to an endpoint:
@@ -71,10 +71,10 @@ In this lab, you will learn how to use Vertex AI to train and serve a TensorFlow
    print('API response: ', response)
    print('Predicted MPG: ', response.predictions[0][0])
    ```
-![](https://github.com/rahulodedra30/MLOps-TA/blob/main/lab2/Images/model%20registry.png)
-![](https://github.com/rahulodedra30/MLOps-TA/blob/main/lab2/Images/deployment.png)
-![](https://github.com/rahulodedra30/MLOps-TA/blob/main/lab2/Images/deployed%20model%20details.png)
-![](https://github.com/rahulodedra30/MLOps-TA/blob/main/lab2/Images/endpoint%20prediction.png)
+![](https://github.com/rahulodedra30/MLOps-TA/blob/main/lab3/Images/model%20registry.png)
+![](https://github.com/rahulodedra30/MLOps-TA/blob/main/lab3/Images/deployment.png)
+![](https://github.com/rahulodedra30/MLOps-TA/blob/main/lab3/Images/deployed%20model%20details.png)
+![](https://github.com/rahulodedra30/MLOps-TA/blob/main/lab3/Images/endpoint%20prediction.png)
 
 ## Conclusion
 You have successfully trained and deployed a TensorFlow model using Vertex AI and a custom container. You can now make predictions using the deployed model endpoint.
