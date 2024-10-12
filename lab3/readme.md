@@ -1,5 +1,5 @@
 
-# Vertex AI: Training, Serving a Custom Model and Monitoring drift
+# Vertex AI: Training, Serving, and Monitoring a Custom Model 
 
 ## Overview
 In this lab, we will learn how to use Vertex AI to train and serve a TensorFlow model using code in a custom container. While we are using TensorFlow in this example, It could easily replaced by any another framework. We will be focussing on Training, Prediction, and Notebooks in this lab.
