@@ -2,7 +2,7 @@
 # Vertex AI: Training, Serving, and Monitoring a Custom Model 
 
 ## Overview
-In this lab, we will learn how to use Vertex AI to train and serve a TensorFlow model using code in a custom container. While we are using TensorFlow in this example, It could easily replaced by any another framework. We will be focussing on Training, Prediction, and Notebooks in this lab.
+In this lab, we guide you through creating, training, serving, and monitoring a model using a custom container in Vertex AI. We will explore the flexibility custom containers offer in managing compute resources and model code, enabling deployment with any ML framework. The objectives include building and containerizing model training code, submitting a training job to Vertex AI, deploying the model to an endpoint, and setting up monitoring for predictions. Follow along as we dive into the process step by step.
 
 ![](https://github.com/rahulodedra30/MLOps-TA/blob/main/lab3/Images/flow.png)
 
