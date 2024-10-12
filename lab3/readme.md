@@ -76,5 +76,14 @@ In this lab, you will learn how to use Vertex AI to train and serve a TensorFlow
 ![](https://github.com/rahulodedra30/MLOps-TA/blob/main/lab3/Images/deployed%20model%20details.png)
 ![](https://github.com/rahulodedra30/MLOps-TA/blob/main/lab3/Images/endpoint%20prediction.png)
 
+#### Model Monitoring
+
+Vertex AI Model Monitoring lets us run monitoring jobs as needed or on a regular schedule to track the quality of your tabular models. If we've set alerts, Vertex AI Model Monitoring informs when metrics surpass a specified threshold.
+
+Vertex AI Model Monitoring can track and alert us when deviations exceed a specified threshold. We can then re-evaluate or retrain your model to ensure the model is behaving as intended.
+
+
+
+
 ## Conclusion
 You have successfully trained and deployed a TensorFlow model using Vertex AI and a custom container. You can now make predictions using the deployed model endpoint.
