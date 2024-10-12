@@ -2,7 +2,7 @@
 # Vertex AI: Training, Serving a Custom Model and Monitoring drift
 
 ## Overview
-In this lab, you will learn how to use Vertex AI to train and serve a TensorFlow model using code in a custom container. While we are using TensorFlow in this example, It could easily replaced by any another framework. We will be focussing on Training, Prediction, and Notebooks in this lab.
+In this lab, we will learn how to use Vertex AI to train and serve a TensorFlow model using code in a custom container. While we are using TensorFlow in this example, It could easily replaced by any another framework. We will be focussing on Training, Prediction, and Notebooks in this lab.
 
 ![](https://github.com/rahulodedra30/MLOps-TA/blob/main/lab3/Images/flow.png)
 
@@ -10,6 +10,7 @@ In this lab, you will learn how to use Vertex AI to train and serve a TensorFlow
 - Build and containerize model training code in Vertex Notebooks.
 - Submit a custom model training job to Vertex AI.
 - Deploy your trained model to an endpoint and use that endpoint to get predictions.
+- Monitoring input data and predictions
 
 ## Steps to Run the Lab
 
@@ -28,6 +29,9 @@ In this lab, you will learn how to use Vertex AI to train and serve a TensorFlow
 ![](https://github.com/rahulodedra30/MLOps-TA/blob/main/lab3/Images/JupyterLab.png)
 
 ### Task 2: Containerize Training Code
+
+We are going to submit training job to Vertex by putting our training code in a Docker container and pushing it container to Google Container Registry. Using this approach, we can train a model built with any framework.
+
 1. create a directory
 2. Create a Dockerfile
 3. Add the necessary commands to your Dockerfile (see lab details for the complete Dockerfile content).
@@ -82,8 +86,10 @@ Vertex AI Model Monitoring lets us run monitoring jobs as needed or on a regular
 
 Vertex AI Model Monitoring can track and alert us when deviations exceed a specified threshold. We can then re-evaluate or retrain your model to ensure the model is behaving as intended.
 
-
-
+![](https://github.com/rahulodedra30/MLOps-TA/blob/main/lab3/Images/monitoring%201.png)
+![](https://github.com/rahulodedra30/MLOps-TA/blob/main/lab3/Images/monitoring%202.png)
+![](https://github.com/rahulodedra30/MLOps-TA/blob/main/lab3/Images/monitoring%204.png)
+![](https://github.com/rahulodedra30/MLOps-TA/blob/main/lab3/Images/monitoring%203.png)
 
 ## Conclusion
-You have successfully trained and deployed a TensorFlow model using Vertex AI and a custom container. You can now make predictions using the deployed model endpoint.
+We have successfully trained and deployed a TensorFlow model using Vertex AI and a custom container. We can now make predictions using the deployed model endpoint.
